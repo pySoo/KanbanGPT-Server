@@ -50,4 +50,8 @@ app.post(END_POINT.CODE_GENERATION, async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to gpt api server!');
+});
+
 app.listen(port);
