@@ -54,4 +54,4 @@ app.get('/', (req, res) => {
   res.send('Welcome to gpt api server!');
 });
 
-app.listen(port);
+app.listen(process.env.PORT || port);
