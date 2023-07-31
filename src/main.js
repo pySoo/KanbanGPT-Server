@@ -17,10 +17,10 @@ app.post(END_POINT.CODE_GENERATION, async (req, res) => {
     const response = await axios.post(
       OPENAI_COMPLETIONS,
       {
-        model: 'text-davinci-003',
+        model: 'davinci-codex',
         prompt,
         max_tokens: 1000,
-        temperature: 0,
+        temperature: 0.2,
       },
       {
         headers: {
